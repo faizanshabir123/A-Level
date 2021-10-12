@@ -1,4 +1,4 @@
-# linked list operatio
+# linked list operations
 List = []
 NULL = -1 # NullPointer should be set to -1 if using array element with index 0
 freeptr = 0 #set starting position of free list
