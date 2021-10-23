@@ -13,7 +13,7 @@ def InsertionSort():
                 List[Sorted + 1] = List[Sorted] # then move the first/last sorted element one position to the right
                 List[Sorted] = ItemToBeInserted # ”insert” the unsorted element to the left of previous position
                 Sorted = Sorted - 1 # and move one place up the array till the start of array has reached
-                print("Current condition of List: ",List)
+                print("Current condition of List(after swapping): ",List)
             else:
                 print("No swap took place")
                 print("Current condition of List: ",List)
