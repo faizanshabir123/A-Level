@@ -1,7 +1,7 @@
 # Algorithm for Stack
 
 List = []
-top = 0
+top = -1
 bottom = 0
 
 def stack():
