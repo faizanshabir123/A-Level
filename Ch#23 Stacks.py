@@ -33,7 +33,7 @@ def Pop():
     global BaseOfStackPointer
     global TopOfStackPointer
     global Stack
-    Item = -1
+    Item = NullPointer
     if TopOfStackPointer > NullPointer: # there is at least one item on the stack
         Item = Stack[TopOfStackPointer]
         Stack[TopOfStackPointer] = EMPTYSTRING # pop item off the top of the stack
@@ -51,10 +51,11 @@ def main():
             Push(NewItem)
         elif choice == 2:
             ItemPopped = Pop()
-            if ItemPopped == -1:
+            if ItemPopped == NullPointer:
                 print("Stack Empty")
             else:
                 print("Item popped is: ",ItemPopped)
+
             print("Current condition of stack",Stack)
             print("Top of stack pointer is: ",TopOfStackPointer)
         else:
